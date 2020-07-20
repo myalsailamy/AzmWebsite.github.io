@@ -68,7 +68,7 @@ h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 22px 0;
+  padding: 10px 0;
 }
 
 #header.header-scrolled {
@@ -96,6 +96,11 @@ h6 {
   padding: 0;
   margin: 0;
   max-height: 75px;
+}
+
+
+#header.header-scrolled .logo img {
+  max-height: 45px !important;
 }
 
 @media (max-width: 768px) {
@@ -813,76 +818,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# More Services
---------------------------------------------------------------*/
-.more-services {
-  padding-top: 20px;
-}
-
-.more-services .card {
-  border: 0;
-  padding: 60px 20px 20px 20px;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.more-services .card-body {
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  transition: ease-in-out 0.4s;
-  border-radius: 5px;
-}
-
-.more-services .card-title {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.more-services .card-title a {
-  color: #222222;
-}
-
-.more-services .card-text {
-  color: #5e5e5e;
-}
-
-.more-services .read-more a {
-  color: #777777;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 12px;
-  transition: 0.4s;
-}
-
-.more-services .read-more a:hover {
-  text-decoration: underline;
-}
-
-.more-services .card:hover .card-body {
-  background: #1188a4;
-}
-
-.more-services .card:hover .read-more a,
-.more-services .card:hover .card-title,
-.more-services .card:hover .card-title a,
-.more-services .card:hover .card-text {
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
 .features .icon-box {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background: #f6f6f6;
   transition: ease-in-out 0.3s;
 }
@@ -1375,8 +1316,8 @@ section {
 .breadcrumbs {
   padding: 15px 0;
   background: #f8f8f8;
-  min-height: 40px;
-  margin-top: 86px;
+  min-height: 30px;
+  margin-top: 120px;
 }
 
 @media (max-width: 992px) {
@@ -1410,11 +1351,21 @@ section {
   padding-left: 10px;
 }
 
+.rtl .breadcrumbs ol li+li {
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+}
+
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #3c3c3c;
   content: "/";
+}
+
+.rtl .breadcrumbs ol li+li::before {
+  padding-right: 0px;
+  padding-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1432,25 +1383,25 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# azmtime Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.azmtime-details {
   padding-top: 20px;
 }
 
-.portfolio-details .portfolio-title {
+.azmtime-details .azmtime-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav,
-.portfolio-details .portfolio-details-carousel .owl-dots {
+.azmtime-details .azmtime-details-carousel .owl-nav,
+.azmtime-details .azmtime-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot {
+.azmtime-details .azmtime-details-carousel .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -1459,37 +1410,37 @@ section {
   background-color: #ddd !important;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
+.azmtime-details .azmtime-details-carousel .owl-dot.active {
   background-color: #1188a4 !important;
 }
 
-.portfolio-details .portfolio-info {
+.azmtime-details .azmtime-info {
   padding-top: 45px;
 }
 
-.portfolio-details .portfolio-info h3 {
+.azmtime-details .azmtime-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-info ul {
+.azmtime-details .azmtime-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.azmtime-details .azmtime-info ul li+li {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-info p {
+.azmtime-details .azmtime-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
 
 @media (max-width: 992px) {
-  .portfolio-details .portfolio-info {
+  .azmtime-details .azmtime-info {
     padding-top: 20px;
   }
 }
@@ -1607,11 +1558,17 @@ section {
   color: #ec49a6 !important;
 }
 
+.badge-xl {
+  border-radius: 5px !important;
+  margin-right: 4px;
+  color: #fff !important;
+  padding: 3px 5px;
+  display: Inline-Block;
+}
+
 /*--------------------------------------------------------------
 # Tabs
 --------------------------------------------------------------*/
-
-/* Tabs*/
 section {
   padding: 60px 0;
 }
@@ -1623,17 +1580,17 @@ section .section-title {
   text-transform: uppercase;
 }
 
-#tabs {
+#tabs-instructions {
   background: #fff;
   color: #1188a4;
 }
 
-#tabs h6.section-title {
+#tabs-instructions h6.section-title {
   color: #eee;
 }
 
-#tabs .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+#tabs-instructions .nav-tabs .nav-item.show .nav-link,
+#tabs-instructions .nav-tabs .nav-link.active {
   color: #1188a4;
   background-color: transparent;
   border-color: transparent transparent #1188a4;
@@ -1643,7 +1600,7 @@ section .section-title {
   transition: all 0.5s;
 }
 
-#tabs .nav-tabs .nav-link {
+#tabs-instructions .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
