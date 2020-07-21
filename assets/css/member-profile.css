@@ -250,7 +250,6 @@
     border-color: #bd9804;
 }
 
-.icon-box {}
 
 .icon-box .btn {
     border: 1px solid #e1e1e1;
@@ -264,7 +263,7 @@
 }
 
 
-/* user logs */
+/* user-activity */
 .user-activity {
     display: flex !important;
     align-items: stretch !important;
@@ -316,47 +315,6 @@
         min-width: 110px;
     }
 }
-
-/* RECENT - USERS */
-.widget-users {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.widget-users li {
-    border-bottom: 1px solid #ebebeb;
-    padding: 15px 0;
-    height: 96px;
-}
-
-
-.widget-users li>.details {
-    margin-left: 60px;
-}
-
-.widget-users li>.details>.name {
-    font-weight: 600;
-}
-
-.widget-users li>.details>.name>a {
-    color: #344644;
-}
-
-.widget-users li>.details>.name>a:hover {
-    color: #2bb6a3;
-}
-
-.widget-users li>.details>.time {
-    color: #2bb6a3;
-    font-size: 0.75em;
-    padding-bottom: 7px;
-}
-
-.widget-users li>.details>.time.online {
-    color: #8dc859;
-}
-
 
 /* CONVERSATION */
 .conversation-inner {

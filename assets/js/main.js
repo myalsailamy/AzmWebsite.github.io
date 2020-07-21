@@ -134,29 +134,6 @@
     return false;
   });
 
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      900: {
-        items: 2
-      }
-    }
-  });
 
   // Init AOS
   function aos_init() {
@@ -167,10 +144,9 @@
       mirror: false
     });
   }
+
   $(window).on('load', function() {
     aos_init();
   });
-
-
 
 })(jQuery);
